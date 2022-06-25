@@ -1,0 +1,13 @@
+.row.around-xs
+  .col-xs-3
+    = redux_app 'DemoApp',
+      description: @data[:description],
+      isEarthFlat: @data[:is_earth_flat],
+      url: @data[:url]
+
+  .col-xs-3
+    = redux_app 'InputField',
+      defaultField: @data[:default_field]
+
+  .col-xs-3
+    = render 'some_static_content'

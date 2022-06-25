@@ -1,0 +1,63 @@
+{
+  "name": "react-redux-demo",
+  "private": true,
+  "scripts": {
+    "test": "ava",
+    "lint": "eslint ./app/javascript/src/**/*.js ./spec/javascripts/**/*.js"
+  },
+  "ava": {
+    "files": [
+      "./spec/javascripts/modules/**/*.js"
+    ],
+    "require": [
+      "@babel/register",
+      "./spec/javascripts/helpers/_setup-browser-env.js",
+      "./spec/javascripts/helpers/_setup-enzyme-adapter.js"
+    ],
+    "babel": {
+      "compileAsTests": [
+        "spec/javascripts/helpers/**/*"
+      ]
+    }
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.13.13",
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "5.3.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "immutable": "^4.0.0-rc.12",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.0",
+    "redux-immutable": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "@ava/babel": "^1.0.1",
+    "@babel/register": "^7.13.16",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.1",
+    "ava": "^3.15.0",
+    "enzyme": "^3.11.0",
+    "eslint": "^7.25.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "jsdom": "^16.5.3",
+    "jsdom-global": "^3.0.2",
+    "redux-mock-store": "^1.5.4",
+    "sinon": "^10.0.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

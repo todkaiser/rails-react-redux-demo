@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  web:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && ./bin/rails s -p 5000 -b '0.0.0.0'"
+    ports:
+      - 5000:5000
+    volumes:
+      - .:/app
+    environment:
+      RACK_ENV: development
+      RAILS_ENV: development
+      WEBPACKER_DEV_SERVER_HOST: webpacker
+    depends_on:
+      - webpacker
+  webpacker:
+    build: .
+    command: ./bin/webpack-dev-server
+    ports:
+      - 3035:3035
+    volumes:
+      - .:/app
+    environment:
+      NODE_ENV: development
+      RAILS_ENV: development
+      WEBPACKER_DEV_SERVER_HOST: 0.0.0.0

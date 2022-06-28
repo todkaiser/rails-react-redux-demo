@@ -45,19 +45,19 @@ Go to http://localhost:5000/demo and http://localhost:5000/single_page_app.
 
 - JS apps seamlessly coexist within the context of traditional server-rendered HTML pages; there is no one or the other – both can work depending on the situation.
 
-- Each JS app is separated by business domain, yet retains the same code organization and structure with each other. This allows logical separation while at the same time bringing about consistency and predictability.
+- Each JS app is separated by business domain, yet retains the same code organization and structure with each other. This establishes a pattern for consistency and predictability.
 
-- Enables easy JS testing. When redux is used properly, react components become more-or-less pure functions. This results is straightforward unit testing because you don’t have to worry about side effects which may occur if your component manages its own internal state. This is a powerful test strategy when also combined with full integration tests.
+- Enables easy JS testing. When redux is used properly, react components become more-or-less pure functions. This can simplify unit testing because there are less side effects which may occur if a component manages its own internal state.
 
-- Because we’re still working in a Rails context, we also take advantage of that fact and can do things like run proper integration tests (Rspec calls this “feature specs”) in a browser environment. This brings confidence that the features we work on are all working together with the backend as expected.
+- Because we’re still working in a Rails context, we also take advantage of that fact and can do things like run proper integration tests (Rspec calls these “feature specs”) in a browser environment. This brings confidence that the features we work on are all working together with the backend as expected.
 
 - JQuery is not required; it can be dropped completely.
 
-- Redux centralizes all application state within a single store object. This approach may be overkill for smaller apps, but is often helpful when building large apps. The patterns and predictabile nature of redux can be hepful in reducing the overhead costs of onboarding new engineers.
+- Redux centralizes all application state within a single store object. This approach may be overkill for smaller apps, but is often helpful when building large apps. The patterns and predictabile nature of redux can be over the long run or when onboarding new engineers fresh to the codebase.
 
-- React and redux come with helpful browser extensions. These tools enable you to visualize the overall structure of your application as opposed to just interpreting the DOM. Additionally, you can see how each action is dispatched based on a user’s interaction as well as explicitly see how the store’s state tree is updating in real time. This is powerful and greatly simplifies debugging.
+- Both react and redux come with helpful browser extensions for developers. These tools enable the overall structure and behavior of an application to be visualized. Each action is visually dispatched based on a user’s interaction as well as explicitly see how the store’s state tree is updating in real time. This is a powerful debugging tool.
 
-- Setting up modern frontends powered by JS can get very complicated. This demo app removes a lot of the guesswork and offers itself as a potential solution for integrating react + redux + rails.
+- Setting up modern frontends powered is complicated. This demo app can serve as a reference for assisting developers as they explore what works best for them when integrating react + redux + rails.
 
 ## Screenshots
 

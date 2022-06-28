@@ -13,14 +13,18 @@ bundle && yarn
 
 Start servers:
 ```
-bin/rails server
+bin/rails server && bin/webpack-dev-server
 ```
-```
-bin/webpack-dev-server
-```
-or if using a process manager Overmind, simply run
+
+or if using a process manager like Overmind, simply run
 ```
 overmind start
+```
+
+or if using Docker
+
+```
+docker compose up
 ```
 
 Go to http://localhost:5000/demo and http://localhost:5000/single_page_app.

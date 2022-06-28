@@ -2,7 +2,7 @@
 
 ## About
 
-This demo app presents an archiecture for building complex frontends using React + Redux + Rails.
+This demo app presents an architecture for building complex frontends using React + Redux + Rails.
 
 ## Getting started
 

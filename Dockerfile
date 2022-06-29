@@ -20,7 +20,7 @@ RUN apt-get update -yqq && \
 
 # Setup our bundler version specifically
 ENV BUNDLER_VERSION='2.2.15'
-RUN gem install bundler --no-document -v '2.2.15'
+RUN gem install bundler --no-document -v $BUNDLER_VERSION
 
 ENV APP_HOME /app
 RUN mkdir -p $APP_HOME
